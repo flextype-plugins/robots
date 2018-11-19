@@ -1,5 +1,5 @@
 name: Robots
-version: 1.0.0
+version: 1.0.1
 description: "Robots plugin to generate a robots.txt file for your site."
 author:
   name: Sergey Romanenko
@@ -8,6 +8,3 @@ author:
 homepage: https://github.com/flextype-plugins/robots
 bugs: https://github.com/flextype-plugins/robots/issues
 license: MIT
-
-# Plugin settings
-enabled: true

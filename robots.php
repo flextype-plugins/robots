@@ -15,11 +15,14 @@ namespace Flextype;
 
 use Flextype\Component\{Event\Event, Http\Http};
 
-if (Http::getUriSegment(0) == 'robots.txt') {
-        Event::addListener('onPageBeforeRender', function () {
+//
+// Add listner for onCurrentPageAfterProcessed event
+//
+Event::addListener('onCurrentPageBeforeLoaded', function () {
+    if (Http::getUriSegment(0) == 'robots.txt') {
         Http::setResponseStatus(200);
         Http::setRequestHeaders('Content-Type: text/plain; charset=utf-8');
         Themes::view('robots/views/templates/robots')->display();
         Http::requestShutdown();
-    });
-}
+    }
+});
