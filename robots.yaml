@@ -1,5 +1,5 @@
 name: Robots
-version: 1.0.1
+version: 1.0.2
 description: "Robots plugin to generate a robots.txt file for your site."
 author:
   name: Sergey Romanenko
